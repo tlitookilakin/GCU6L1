@@ -1,0 +1,142 @@
+body {
+    padding: 0px;
+    margin : 0px;
+    background-image: url("images/light_clouds.png");
+    background-repeat: repeat;
+}
+
+.center {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.banner {
+    position: sticky;
+    top:0px;
+    padding-top: 50px;
+    background-image: url("images/light_banner.jpg");
+    background-size: cover;
+    overflow: auto;
+    background-position: center;
+    min-height: 250px;
+    color: white;
+    z-index: 1;
+}
+
+.banner hr {
+    border: 1px solid white;
+}
+
+.banner h1 {
+    margin-bottom: 0px;
+}
+.banner h2 {
+    margin-top: 0px;
+}
+
+nav {
+    display: block;
+}
+nav a {
+    background-color: green;
+    color: white;
+    padding: .5em;
+    border-radius: 8px 8px 0px 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+nav .current {
+    background-color: white;
+    color: green;
+}
+
+main {
+    background-color: white;
+    position: relative;
+    overflow: auto;
+    font-family: sans-serif;
+}
+main > div {
+    padding: 1em 3em;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    background-color: #ddd;
+    padding: 0px 5px;
+}
+
+a {
+    color: green;
+}
+
+h3 {
+    color: green;
+    border-bottom: green solid 2px;
+    padding-bottom: .25em;
+}
+h4 {
+    color: green;
+    background-color: #0f03;
+    padding: .25em;
+    margin-bottom: 0px;
+}
+
+.about-portrait {
+    float: left;
+    border-radius: 100%;
+    margin-right: 2em;
+    margin-bottom: 4em;
+}
+h3 a {
+    font-size: .75em;
+    font-weight: normal;
+    text-decoration: underline;
+    float: right;
+    padding-top: .5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-image: url("images/dark_clouds.png");
+    }
+    .banner {
+        background-image: url("images/dark_banner.jpg");
+    }
+    footer {
+        background-color: #333;
+    }
+    main {
+        background-color: #555;
+    }
+    h3 {
+        color: cyan;
+        border-bottom-color: cyan;
+    }
+    h4, a, h3 a {
+        color: cyan;
+    }
+    h4 {
+        background-color: #0ff3;
+    }
+    nav a {
+        background-color: darkcyan;
+        color: #333;
+    }
+    nav .current {
+        background-color: #555;
+        color: cyan;
+    }
+}
